@@ -1,0 +1,45 @@
+
+
+fastapi
+# API Framework
+
+uvicorn
+# FastAPI Server
+
+pydantic
+# Data Validation
+
+pydantic-settings
+# .env Configuration
+
+python-dotenv
+# Environment Variables
+
+sqlalchemy
+# ORM
+
+psycopg2-binary
+# PostgreSQL Driver
+
+alembic
+# Database Migration
+
+python-jose
+# JWT Authentication
+
+passlib[bcrypt]
+# Password Hashing
+
+email-validator
+# Email Validation
+
+python-multipart
+# Form Data Upload
+
+httpx
+# External API Calls
+
+loguru
+# Logging
+
+
