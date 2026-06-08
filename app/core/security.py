@@ -4,14 +4,18 @@ from typing import Any
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 
+
 from app.core.config import settings
 
 # Password hashing ke liye shared context.
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+pwd_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     """User ke plain password ko stored hash se compare karta hai."""
+    print("PASSWORD:", plain_password)
+    print("PASSWORD LENGTH:", len(plain_password))
+    print("HASH:", hashed_password)
     return pwd_context.verify(plain_password, hashed_password)
 
 
