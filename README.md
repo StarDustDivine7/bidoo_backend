@@ -60,4 +60,4 @@ Project root se run karein:
 uvicorn app.main:app --reload --port 8000
 ```
 
-Details ke liye [docs/DEPLOY_RENDER.md](/Users/debabratadutta/StudioProjects/bidoo_backend/docs/DEPLOY_RENDER.md) dekhein.
+For Details [docs/DEPLOY_RENDER.md](/Users/debabratadutta/StudioProjects/bidoo_backend/docs/DEPLOY_RENDER.md).
