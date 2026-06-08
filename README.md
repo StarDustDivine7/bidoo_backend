@@ -60,17 +60,4 @@ Project root se run karein:
 uvicorn app.main:app --reload --port 8000
 ```
 
-## Important Note
-
-`app/` folder ke andar jaake `uvicorn app.main:app` mat chalaiye.
-Warna Python kisi aur installed `app` package ko import kar sakta hai.
-
-## First Admin Create Karne Ka Tarika
-
-Abhi API me admin-only create route hai, isliye initial admin create karne ke liye aapko ek seed script ya direct DB insert ki zarurat hogi. Quick option:
-- temporary DB me ek admin row insert karo
-- ya mujhse bolo, main ek `seed_admin.py` bana deta hoon
-
-## Render Deploy
-
 Details ke liye [docs/DEPLOY_RENDER.md](/Users/debabratadutta/StudioProjects/bidoo_backend/docs/DEPLOY_RENDER.md) dekhein.
